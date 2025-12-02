@@ -1,5 +1,6 @@
 // Proměnná 'db' byla inicializována ve vašem index.html a obsahuje připojení k Firestore
 const seznamVypisku = document.getElementById('seznam-vypisku');
+const db = firebase.firestore();
 
 // --- Funkce pro načtení a zobrazení dat ---
 function nactiVypisky() {

@@ -27,7 +27,7 @@ async function nactiVypisky() {
         seznamVypisku.innerHTML = '<h2>Probíhá dotaz do Firebase...</h2>';
         
         // Získání dat z kolekce "vypisky"
-        const querySnapshot = await getDocs(collection(db, "vypisky"));
+        const querySnapshot = await getDocs(collection(db, "vypisky"));  
         
         // Vyčištění po načtení
         seznamVypisku.innerHTML = '<h2>Výsledky:</h2>';

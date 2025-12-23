@@ -1,0 +1,30 @@
+:root {
+    --barva-pozadi:#FFFFEA;
+    --barva-fontu: #2E1E0F; 
+}
+
+body {
+    background-color: var(--barva-pozadi); 
+    color: var(--barva-fontu);
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+    font-family: 'Playfair Display', serif;
+}
+
+#medailonek {
+    margin: 100px 0 100px 0;
+    padding: 30px 0 30px 0;
+    border-radius: 15px;
+    background-color: #6A994E;
+}
+
+#nadpis {
+    font-size: 80px; 
+    text-align: center;
+}
+
+#jmeno {
+    font-size: 40px; 
+    text-align: center;
+}

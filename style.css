@@ -1,6 +1,6 @@
 :root {
     --barva-pozadi:#FFFFEA;
-    --barva-fontu: #2E1E0F; 
+    --barva-fontu: #2e1e0f; 
 }
 
 body {
@@ -14,27 +14,30 @@ body {
 
 .medailonek {
     margin: 3rem 0 3rem      0;
-    border-radius: 50px;
+    border-radius: 30px;
     background-color: #6A994E;
     padding: 0 1.5rem 0 1.5rem;
 }
 
 .jmeno {
-    font-size: 2.8rem; 
+    font-size: clamp(2.5rem, 2.8vw, 4rem);
+    /*font-size: 2.5rem;*/ 
     text-align: center;
     padding: 2rem 0 0.5rem 0;
     margin: 0;
 }
 
 .nadpis {
-    font-size: 80px; 
+    font-size: clamp(3.5rem, 4vw, 5rem);
+    /*font-size: 5rem;*/ 
     text-align: center;
+    line-height: 1.1;
     margin: 0;
     padding: 0 0 1rem 0;
 }
 
 .text-medailonku {
-    font-size: 2rem; 
+    font-size: clamp(1.8rem, 2vw, 5rem); 
     text-align: center;
     padding: 0.5rem 0 2rem 0;
     margin: 0;
@@ -46,9 +49,14 @@ body {
     margin: 0;
 }
 
+.linky a {
+    text-decoration: none;
+}
+
 .icon-wrap {
     margin: 0 1rem 0 1rem;
 }
+
 
 
 

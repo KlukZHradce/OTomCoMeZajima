@@ -1,6 +1,6 @@
 :root {
-    --barva-pozadi:#FFFFEA;
-    --barva-fontu: #2e1e0f; 
+    --barva-pozadi:#FFFFE0;
+    --barva-fontu: #132A13; 
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 .medailonek {
     margin: 3rem 0 3rem      0;
     border-radius: 30px;
-    background-color: #6A994E;
+    background-color: #90A955;
     padding: 0 1.5rem 0 1.5rem;
 }
 

@@ -57,6 +57,46 @@ body {
     margin: 0 1rem 0 1rem;
 }
 
+#seznam-vypisku {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.karta {
+    display: block;
+    background: rgba(49, 87, 44, 0.2);
+    padding: 2.5rem;
+    border-radius: 24px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.karta:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,.15);
+}
+
+.karta h2 {
+    font-size: 2.2rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.karta .tema {
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 1rem;
+}
+
+.karta .perex {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    opacity: 0.85;
+}
 
 
 

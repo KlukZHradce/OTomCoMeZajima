@@ -24,13 +24,10 @@ const seznamVypisku = document.getElementById('seznam-vypisku');
 async function nactiVypisky() {
     try {
         // Zobrazení loading stavu
-        seznamVypisku.innerHTML = '<h2>Probíhá dotaz do Firebase...</h2>';
+        seznamVypisku.innerHTML = '<h2>Články</h2>';
         
-        // Získání dat z kolekce "vypisky"
-        const querySnapshot = await getDocs(collection(db, "vypisky"));  
-        
-        // Vyčištění po načtení
-        seznamVypisku.innerHTML = '<h2>Výsledky:</h2>';
+        // Získání dat z kolekce "clanky"
+        const querySnapshot = await getDocs(collection(db, "clanky"));  
         
         if (querySnapshot.empty) {
             seznamVypisku.innerHTML += '<p>V databázi nejsou žádné výpisky k zobrazení.</p>';
@@ -42,11 +39,11 @@ async function nactiVypisky() {
             const data = doc.data();
             
             const clanekHTML = `
-                <article style="border: 1px solid #ccc; padding: 15px; margin-bottom: 10px; border-radius: 8px;">
-                    <h3>${data.tema || 'Neznámé Téma'}</h3>
-                    <p><strong>Kategorie:</strong> ${data.kategorie || 'Neuvedeno'}</p>
-                    <p>${data.obsah || 'Bez obsahu.'}</p>
-                </article>
+                <a class="karta" href="clanek.html?slug=${data.slug}">
+                <h2>${data.nazev}</h2>
+                <p class="tema">${data.tema}</p>
+                <p class="perex">${data.perex}</p>
+                </a>
             `;
             
             seznamVypisku.innerHTML += clanekHTML;

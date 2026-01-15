@@ -23,9 +23,6 @@ const seznamVypisku = document.getElementById('seznam-vypisku');
 // Funkce pro načtení a zobrazení dat
 async function nactiVypisky() {
     try {
-        // Zobrazení loading stavu
-        seznamVypisku.innerHTML = '<h2>Články</h2>';
-        
         // Získání dat z kolekce "clanky"
         const querySnapshot = await getDocs(collection(db, "clanky"));  
         

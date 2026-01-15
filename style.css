@@ -1,6 +1,7 @@
 :root {
     --barva-pozadi:#FFFFE0;
-    --barva-fontu: #132A13; 
+    --barva-fontu: #132A13;
+    --barva-karet: #ECF39E;
 }
 
 body {
@@ -13,8 +14,8 @@ body {
 }
 
 .medailonek {
-    margin: 3rem 0 3rem      0;
-    border-radius: 30px;
+    margin: 3rem 0 4rem      0;
+    border-radius: 24px;
     background-color: #90A955;
     padding: 0 1.5rem 0 1.5rem;
 }
@@ -57,6 +58,14 @@ body {
     margin: 0 1rem 0 1rem;
 }
 
+#clanky-nadpis {
+    text-align: center;
+    font-size: clamp(2.5rem, 2.8vw, 4rem);
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    ;
+}
+
 #seznam-vypisku {
     display: flex;
     flex-direction: column;
@@ -66,7 +75,7 @@ body {
 
 .karta {
     display: block;
-    background: rgba(49, 87, 44, 0.2);
+    background: var(--barva-karet);
     padding: 2.5rem;
     border-radius: 24px;
     text-decoration: none;
@@ -80,12 +89,12 @@ body {
 }
 
 .karta h2 {
-    font-size: 2.2rem;
+    font-size: clamp(2rem, 2.2vw, 4rem);
     margin: 0 0 0.5rem 0;
 }
 
 .karta .tema {
-    font-size: 0.9rem;
+    font-size: clamp(1rem, 1.3vw, 2rem);
     letter-spacing: 0.1em;
     text-transform: uppercase;
     opacity: 0.6;
@@ -93,7 +102,7 @@ body {
 }
 
 .karta .perex {
-    font-size: 1.2rem;
+    font-size: clamp(1.2rem, 1.4vw, 2rem);
     line-height: 1.6;
     opacity: 0.85;
 }

@@ -13,6 +13,14 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
+#logo {
+    display: block;
+    margin: 0 auto;
+    padding-top: 2rem;
+    width: 40%;
+    max-width: 250px;
+}
+
 .medailonek {
     margin: 3rem 0 4rem      0;
     border-radius: 24px;
@@ -34,7 +42,7 @@ body {
     text-align: center;
     line-height: 1.1;
     margin: 0;
-    padding: 0 0 1rem 0;
+    padding: 1rem 0 1rem 0;
 }
 
 .text-medailonku {

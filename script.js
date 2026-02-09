@@ -36,10 +36,10 @@ async function nactiVypisky() {
             const data = doc.data();
             
             const clanekHTML = `
-                <a class="karta" href="clanek.html?slug=${data.slug}">
+                <a class = "karta" href = "clanek.html?id=${doc.id}" target="_blank">
                 <h2>${data.nazev}</h2>
-                <p class="tema">${data.tema}</p>
-                <p class="perex">${data.perex}</p>
+                <p class = "tema">${data.tema}</p>
+                <p class = "perex">${data.perex}</p>
                 </a>
             `;
             

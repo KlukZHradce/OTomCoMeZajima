@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail článku</title>
+</head>
+<body>
+    <h1>Testuji ID</h1>
+    <p>ID článku je: <span id="vypis-id">---</span></p>
+
+    <div class="detail-clanku">
+        <h1 id="nadpis">Načítám...</h1>
+        <p id="perex" class="tucne">Hola hej, tady jsem.</p>
+        <div id="obsah"></div>
+    </div>
+
+    <script>
+        // 1. Získáme parametry z URL (to je všechno za otazníkem)
+        const parametry = new URLSearchParams(window.location.search);
+        
+        // 2. Vytáhneme konkrétně parametr "id"
+        const idClanku = parametry.get('id');
+
+        // 3. Vypíšeme ho do stránky pro kontrolu
+        document.getElementById('vypis-id').innerText = idClanku;
+
+        // 4. Kontrola v konzoli
+        console.log("Moje získané ID je:", idClanku);
+    </script>
+</body>
+</html>

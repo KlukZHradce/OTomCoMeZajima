@@ -1,21 +1,8 @@
-// Import Firebase modulů
-import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
-import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";
+// Importujeme funkce pro práci s kolekcí (seznamem)
+import { collection, getDocs } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";
 
-// Firebase konfigurace
-const firebaseConfig = {
-  apiKey: "AIzaSyDMyNNzTJNEnqjweh4jYV3dcKYRryKQV6s",
-  authDomain: "otomcomezajima.firebaseapp.com",
-  projectId: "otomcomezajima",
-  storageBucket: "otomcomezajima.firebasestorage.app",
-  messagingSenderId: "877522454478",
-  appId: "1:877522454478:web:9e9f5b15ee169fe0f18d9f",
-  measurementId: "G-FYJWL9GN7B"
-};
-
-// Inicializace Firebase
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+// Importujeme už databázi z vedlejšího souboru
+import { db } from "./firebase-config.js"; 
 
 // Získání HTML elementu
 const seznamVypisku = document.getElementById('seznam-vypisku');
